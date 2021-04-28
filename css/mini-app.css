@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    min-width: 250px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/*/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
+/* Style the 'HEADER' */
+.header {
+    background: linear-gradient(90deg,#7d9242, #a39b4d);
+    padding: 30px 40px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+/* Clear floats after the header */
+.header:after {
+    clear: both;
+}
+.header h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 27px
+}
+h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px
+}
+#nameHeader{
+    float: left;
+    width: 56%;
+    text-align: center;
+}
+#dateHeader{
+    float: right;
+    width: 44%;
+    text-align: center;
+}
+/* Style the input */
+#nameInput {
+    padding: 9.5px;
+    width: 55%;
+    float: left;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#dateInput {
+    padding: 7px;
+    width: 20%;
+    float: left;
+    margin: 0;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    border-left: solid #7d9242;
+}
+/* Style the "Add" button */
+#addBtn {
+    padding: 9.5px;
+    width: 25%;
+    background-color: rgb(97, 59, 97);
+    color: #fff;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#addBtn:hover {
+    background-color:  rgb(75, 30, 75);
+    color: #fff;
+}
+
+/*/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
+/* Remove margins and padding from the list */
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+th{
+    padding: 10px;
+}
+tr:hover{
+    color: rgb(164, 26, 218);
+}
+table tr td:nth-child(2){
+    width: 37%;
+    text-align: center;
+}
+/* Style the items */
+table tr td {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 30px; /*top, right, bottom, left*/
+    background: #eeeeee;
+    font-size: 18px;
+}
+
+/*/=/=/=/=/=/=/=/=/=/=/=/=/*/
+/* Style the edit button */
+.edit {
+    width: 6%;
+}
+.edit:hover {
+  background-color: #4ecdc4;
+  color: white;
+}
+/*/=/=/=/=/=/=/=/=/=/=/=/=/*/
+/* Style the close button */
+.close {
+    width: 4%;
+}
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
