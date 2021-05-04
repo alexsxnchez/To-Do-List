@@ -145,7 +145,7 @@ table tr td {
 /*/=/=/=/=/=/=/=/=/=/=/=/=/*/
 /* Style the close button */
 .close{
-    width: 5%;
+    width: 37px;
     background-color: #f44336;
     border-radius: 10px;
     text-align: center;
