@@ -2,55 +2,60 @@
 <html lang = 'en'>
     <head>
         <meta charset = 'utf-8'/>
-        <title>Organized Task List</title>
+        <title>Organizer</title>
         <script type = 'text/javascript' src = 'js/mini-app.js'></script>
         <link rel = "stylesheet" type = "text/css" href = 'css/mini-app.css'/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class = "header">
-            <h1>Organized Task List</h1>
-            <input type = "text" id = "nameInput" placeholder = "Task...">
-            <input type = "date" id = "dateInput" placeholder = "Due Date?">
-            <span id= "addBtn">Add to List</span>
+        <div class="holder">
+            <div class = "header">
+                <h1>Organizer</h1>
+                <input type = "text" id = "nameInput" placeholder = "Task...">
+                <input type = "date" id = "dateInput" placeholder = "Due Date?">
+                <span id= "addBtn">Add to List</span>
+            </div>
+            <div class="top-labels">
+                <div id = "nameHeader"><h2>Task</h2></div>
+                <div id = "dateHeader"><h2>Due Date</h2></div>
+            </div>
+            <table id = "taskTable">
+                <tbody id="taskData">
+                    <tr>
+                        <td>5101 - Quiz</td>
+                        <td>2020-12-11</td>
+                    </tr>
+                    <tr>
+                        <td>5103 - Pet Project</td>
+                        <td>2020-12-11</td>
+                    </tr>
+                    <tr>
+                        <td>5102 - Proposal Presentation</td>
+                        <td>2020-12-14</td>
+                    </tr>
+                    <tr>
+                        <td>5103 - Team Restaurant Project</td>
+                        <td>2020-12-15</td>
+                    </tr>
+                    <tr>
+                        <td>5105 - Final Presentation</td>
+                        <td>2020-12-16</td>
+                    </tr>
+                    <tr>
+                        <td>5101 - Assignment 5</td>
+                        <td>2020-12-17</td>
+                    </tr>
+                    <tr>
+                        <td>5103 - Lab 11</td>
+                        <td>2020-12-18</td>
+                    </tr>
+                    <tr>
+                        <td>5104 - CSS Animation Project</td>
+                        <td>2020-12-19</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        
-        <div id = "nameHeader"><h2>Task</h2></div>
-        <div id = "dateHeader"><h2>Due Date</h2></div>
-        <table id = "taskTable">
-            <tr>
-                <td>5101 - Quiz</td>
-                <td>2020-12-11</td>
-            </tr>
-             <tr>
-                <td>5103 - Pet Project</td>
-                <td>2020-12-11</td>
-            </tr>
-             <tr>
-                <td>5102 - Proposal Presentation</td>
-                <td>2020-12-14</td>
-            </tr>
-             <tr>
-                <td>5103 - Team Restaurant Project</td>
-                <td>2020-12-15</td>
-            </tr>
-             <tr>
-                <td>5105 - Final Presentation</td>
-                <td>2020-12-16</td>
-            </tr>
-             <tr>
-                <td>5101 - Assignment 5</td>
-                <td>2020-12-17</td>
-            </tr>
-             <tr>
-                <td>5103 - Lab 11</td>
-                <td>2020-12-18</td>
-            </tr>
-             <tr>
-                <td>5104 - CSS Animation Project</td>
-                <td>2020-12-19</td>
-            </tr>
-        </table>
     </body>
 </html>

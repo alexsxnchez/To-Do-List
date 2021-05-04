@@ -4,6 +4,9 @@ body {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    background: linear-gradient(90deg,#7d9242, #c49227);
+    z-index: 0;
+    width: 100%;
 }
 /* Include the padding and border in an element's total width and height */
 * {
@@ -12,8 +15,20 @@ body {
 
 /*/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
 /* Style the 'HEADER' */
-.header {
-    background: linear-gradient(90deg,#7d9242, #a39b4d);
+.holder{
+    background-color: rgb(224, 224, 224);
+    z-index: 100;
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    filter: drop-shadow(1px 6px 6px rgba(0,0,0,0.7));
+}
+.header{
     padding: 30px 40px;
     text-align: center;
     padding-bottom: 70px;
@@ -23,7 +38,8 @@ body {
     clear: both;
 }
 .header h1{
-    color: white;
+    font-family: 'Verdana', sans-serif;
+    color: black;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 27px
@@ -44,6 +60,9 @@ h2{
     width: 44%;
     text-align: center;
 }
+.top-labels{
+    padding-right: 5%;
+}
 /* Style the input */
 #nameInput {
     padding: 9.5px;
@@ -63,7 +82,7 @@ h2{
     border: none;
     font-size: 16px;
     text-align: center;
-    border-left: solid #7d9242;
+    border-left: solid rgb(201, 201, 201);
 }
 /* Style the "Add" button */
 #addBtn {
@@ -80,12 +99,16 @@ h2{
     border-top-right-radius: 10px;
 }
 #addBtn:hover {
-    background-color:  rgb(75, 30, 75);
+    background-color:  rgb(61, 139, 163);
     color: #fff;
 }
 
 /*/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
 /* Remove margins and padding from the list */
+#taskTable{
+    width: 90%;
+    margin: auto;
+}
 table {
     margin: 0;
     padding: 0;
@@ -94,8 +117,8 @@ table {
 th{
     padding: 10px;
 }
-tr:hover{
-    color: rgb(164, 26, 218);
+tr:not(thead tr):hover{
+    color: rgb(61, 139, 163);
 }
 table tr td:nth-child(2){
     width: 37%;
@@ -121,10 +144,15 @@ table tr td {
 }
 /*/=/=/=/=/=/=/=/=/=/=/=/=/*/
 /* Style the close button */
-.close {
-    width: 4%;
+.close{
+    width: 5%;
+    background-color: #f44336;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    color: #fff;
 }
 .close:hover {
-  background-color: #f44336;
+  background-color: #c2362c;
   color: white;
 }

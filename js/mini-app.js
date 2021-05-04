@@ -8,18 +8,18 @@ function pageReady(){
     
     
     //Get the table row tag-name
-    var tableRow = document.getElementsByTagName("tr");
+    let taskData = document.getElementById("taskData");
+    let tableRow = document.getElementsByTagName("tr");
     //Create a "close" button and append it to each list item
-    var i;
-        for (i = 0; i < tableRow.length; i++) {
-            //create the element and the text inside for 'DELETE'
-            var td = document.createElement("td");
-            var text = document.createTextNode("x");
-            //Add them in
-            td.className = "close";
-            td.appendChild(text);
-            tableRow[i].appendChild(td);
-        }
+    for (let i = 0; i < tableRow.length; i++) {
+        //create the element and the text inside for 'DELETE'
+        let td = document.createElement("td");
+        let text = document.createTextNode("x");
+        //Add them in
+        td.className = "close";
+        td.appendChild(text);
+        tableRow[i].appendChild(td);
+    }
             //Get close element for 'DELETE'
             var close = document.getElementsByClassName("close");
                 for (i = 0; i < close.length; i++) {
@@ -54,7 +54,7 @@ function pageReady(){
         if(nameValue.value !== "" && dateValue.value !== "") {
             
             //create the elements with the values
-            var table = document.getElementById("taskTable");
+            var table = document.getElementById("taskData");
             var nameValue = document.getElementById("nameInput");
             var dateValue = document.getElementById("dateInput");
             //Variable to create new inputs
