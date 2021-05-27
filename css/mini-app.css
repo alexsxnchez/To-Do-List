@@ -156,3 +156,9 @@ table tr td {
   background-color: #c2362c;
   color: white;
 }
+
+@media only screen and (max-width: 600px){
+    .holder {
+        width: 90%;
+    }
+}
