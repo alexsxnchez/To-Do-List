@@ -102,6 +102,10 @@ h2{
     background-color:  rgb(61, 139, 163);
     color: #fff;
 }
+.input-holders {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
 /* Remove margins and padding from the list */
@@ -157,8 +161,8 @@ table tr td {
   color: white;
 }
 
-@media only screen and (max-width: 600px){
-    .holder {
+@media only screen and (max-width: 500px){
+    .holder{
         width: 90%;
     }
 }

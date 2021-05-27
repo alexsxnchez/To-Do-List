@@ -4,7 +4,7 @@
         <meta charset = 'utf-8'/>
         <title>Task Organizer</title>
         <script type = 'text/javascript' src = 'js/mini-app.js'></script>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = 'css/mini-app.css'/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
@@ -13,9 +13,11 @@
         <div class="holder">
             <div class = "header">
                 <h1>Organizer</h1>
-                <input type = "text" id = "nameInput" placeholder = "Task...">
-                <input type = "date" id = "dateInput" placeholder = "Due Date?">
-                <span id= "addBtn">Add to List</span>
+                <div class="input-holders">
+                    <input type = "text" id = "nameInput" placeholder = "Task...">
+                    <input type = "date" id = "dateInput" placeholder = "Due Date?">
+                    <span id= "addBtn">Add to List</span>
+                </div>
             </div>
             <div class="top-labels">
                 <div id = "nameHeader"><h2>Task</h2></div>
